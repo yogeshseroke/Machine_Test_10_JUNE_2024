@@ -1,0 +1,44 @@
+
+(1) for send OTP on email 
+
+url >>>>  http://localhost:9093/test/sendRequest
+
+
+request json >>>>
+
+{
+    "name" : "yogesh",
+    "email" : "seroke7744@gmail.com",
+    "mobile" : "8827742560",
+    "cityName" : "Indore"
+}
+
+response json >>>>
+
+{
+    "message": "Mail sent successfully",
+    "statusCode": 200,
+    "status": "SUCCESS",
+    "data": "Done"
+}
+
+------------------------------------------
+(2) for OTP verification
+
+url >>>>  http://localhost:9093/test/emailVerify
+
+request json >>>>
+
+{
+    "otp" : 763597,
+    "email" : "seroke7744@gmail.com"
+}
+
+response json >>>>
+
+{
+    "message": "Otp matched",
+    "statusCode": 200,
+    "status": "Done",
+    "data": "Verifed"
+}
